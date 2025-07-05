@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #f1f1f1;
+    color: #0f141e;
+    
+    font: normal 16px "Roboto", sans-serif;
+}
+
+a { /* дефолт */
+    color: black;
+    text-decoration: none;
+}
+
+a:hover { /* при наведении */
+    text-decoration: underline;
+}
+
+a:active { /* при нажатии */
+    color: grey; 
+}
+
+a:visited { /* при посещении */
+    color: black; 
+}
+
+.avatar {
+    width: 220px;
+    border-radius: 28px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.info {
+    margin-bottom: 20px;
+}
+
+.info p {
+    color: #86898f;
+    margin: 0;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 750px; /* задает максимальную ширину блока, при увеличении масштаба автоматически уменьшает блок до нужного размера */
+    margin: auto; /* задает внешние отступы - параметр говорит о том, что из размер автоматический */
+}
+
+/* .social {
+    background-color: red;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    border: 5px solid blue;
+    margin: 20px;
+} */
+
+.bg-yellow {
+    background-color: #fff9dc;
+}
+
+.bg-green {
+    background-color: #e5ffe7;
+}
+
+.bg-red {
+    background-color: #ffe5e5;
+}
+
+.card {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.list {
+    padding-left: 20px;
+}
+
+.list li {
+    color: #86898f;
+    margin-bottom: 10px;
+}
