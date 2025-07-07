@@ -32,6 +32,14 @@ a:visited { /* при посещении */
 
 .info {
     margin-bottom: 20px;
+    display: flex;
+}
+
+@media (max-width: 750px) {
+    .info {
+        display: block;
+        text-align: center;
+    }
 }
 
 .info p {
@@ -41,9 +49,18 @@ a:visited { /* при посещении */
     font-weight: bold;
 }
 
+.info-text {
+    margin-left: 20px;
+}
+
+.info-text h4 {
+    margin-bottom: 10px;
+}
+
 .container {
-    max-width: 750px; /* задает максимальную ширину блока, при увеличении масштаба автоматически уменьшает блок до нужного размера */
-    margin: auto; /* задает внешние отступы - параметр говорит о том, что из размер автоматический */
+    max-width: 750px;
+    margin: auto;
+    margin-top: 30px;
 }
 
 /* .social {
@@ -81,4 +98,81 @@ a:visited { /* при посещении */
 .list li {
     color: #86898f;
     margin-bottom: 10px;
+}
+
+.table td {
+    padding-bottom: 10px;
+}
+
+.table td:nth-child(2),
+.table td:nth-child(3) {
+    color: #86898f;
+}
+
+.contact h2 {
+    text-align: center; /* расположение текста */
+}
+
+.form-group label {
+    display: block; /* меняем на блочный тип */
+    font-size: 14px; 
+    color: #86898f; 
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%; /* растягиваем форму на ширину родительского класса container */
+    border: none; /* убираем черную рамку с дефолтной текстовой формы */
+    box-sizing: border-box; /* ??? */
+    background: transparent; /* делаем форму прозрачной */
+    border-bottom: 1px solid #ccc; /* добавляем линию под формой */
+    color: #000;
+    padding: 15px 0 10px;
+    outline: none; /* убираем "границу", которая активируется при нажатии на форму */
+    font-family: inherit; /* наследуем шрифт */
+}
+
+.row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.row > .form-group { /* обращение к классу-потомку*/
+    width: 50%;
+}
+
+.row > .form-group:first-child {
+    margin-right: 20px;
+}
+
+.btn {
+    color: #ccc;
+    background-color: #111;
+    border: 1px solid #f1f1f1;
+    border-radius: 20px;
+    padding: 15px 20px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* .btn:hover {
+    color: #111;
+    background-color: #f1f1f1;
+    border: 1px solid #111;
+} */
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.card-with-meme {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 20px;
+}
+
+#prog-h1 {
+    text-align: center;
 }
